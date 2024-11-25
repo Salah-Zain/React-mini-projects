@@ -1,0 +1,156 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+div {
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+  color: #444;
+  margin: 20px 0 10px;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inp input {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inp button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.inp button:hover {
+  background-color: #0056b3;
+}
+
+.inp p {
+  color: red;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b36b6b;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.3s ease;
+}
+
+li button:hover {
+  background-color: #cc0000;
+}
+
+/* Media Queries */
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 320px) {
+  .inp input {
+    width: 80%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin: 5px 0 0;
+    width: 100%;
+  }
+}
+
+/* Small Mobiles (320px-375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .inp input {
+    width: 85%;
+  }
+}
+
+/* Medium Mobiles (375px-425px) */
+@media (min-width: 375px) and (max-width: 425px) {
+  .inp input {
+    width: 90%;
+  }
+}
+
+/* Large Mobiles (425px-768px) */
+@media (min-width: 425px) and (max-width: 768px) {
+  ul {
+    max-width: 90%;
+  }
+}
+
+/* Tablet (768px-1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  ul {
+    max-width: 70%;
+  }
+
+  .inp input {
+    width: 70%;
+  }
+}
+
+/* Laptop (1024px and above) */
+@media (min-width: 1024px) {
+  ul {
+    max-width: 60%;
+  }
+
+  .inp input {
+    width: 60%;
+  }
+}
