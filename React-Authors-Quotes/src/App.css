@@ -1,0 +1,25 @@
+.selectQ {
+    width: 37%;
+    background-color: rgb(197, 197, 197);
+    height: 250px;
+    display: flex;
+    align-items: center; 
+    border-radius: 12px;
+    border: 1px solid rgb(39, 38, 38);
+}
+
+.select select {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: grey;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid lightgray;
+    text-align: center;
+    position: relative;
+    left: 120%;
+}
+   
+
